@@ -1,0 +1,340 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f5f7fb;
+  color: #1f2937;
+}
+
+.app {
+  min-height: 100vh;
+  padding: 50px 20px;
+}
+
+/* HEADER */
+
+.header {
+  max-width: 900px;
+  margin: 0 auto 40px;
+  text-align: center;
+}
+
+.header h1 {
+  font-size: 42px;
+  margin: 0 0 10px;
+}
+
+.header p {
+  color: #6b7280;
+  font-size: 18px;
+}
+
+
+/* MAIN */
+
+main {
+  max-width: 900px;
+  margin: auto;
+}
+
+
+/* FORMULAIRE */
+
+.form-section,
+.result {
+  background: white;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+  margin-bottom: 25px;
+}
+
+.field {
+  margin-bottom: 25px;
+}
+
+.field label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+textarea {
+  width: 100%;
+  min-height: 180px;
+  padding: 15px;
+  border: 1px solid #d1d5db;
+  border-radius: 10px;
+  resize: vertical;
+  font-family: inherit;
+  font-size: 15px;
+}
+
+textarea:focus {
+  outline: none;
+  border-color: #6366f1;
+}
+
+
+/* BOUTON */
+
+button {
+  width: 100%;
+  padding: 15px;
+  border: none;
+  border-radius: 10px;
+  background: #4f46e5;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #4338ca;
+}
+
+button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+
+/* ERREUR */
+
+.error {
+  margin-top: 15px;
+  color: #dc2626;
+}
+
+
+/* RESULTAT */
+
+.result h2 {
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+
+
+/* SCORE */
+
+.score-section {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.score-number {
+  font-size: 56px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.score-bar {
+  width: 100%;
+  height: 18px;
+  background: #e5e7eb;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.score-progress {
+  height: 100%;
+  background: #4f46e5;
+  border-radius: 20px;
+  transition: width 0.8s ease;
+}
+
+
+/* NIVEAU DU MATCH */
+
+.match-level {
+  display: inline-block;
+  margin-bottom: 15px;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.match-level.excellent {
+  background: #dcfce7;
+  color: #166534;
+}
+
+.match-level.interesting {
+  background: #fef3c7;
+  color: #92400e;
+}
+
+.match-level.low {
+  background: #fee2e2;
+  color: #991b1b;
+}
+
+
+/* BLOCS */
+
+.result-block {
+  margin-bottom: 30px;
+}
+
+.result-block h3 {
+  margin-bottom: 15px;
+}
+
+
+/* BADGES */
+
+.badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.badge {
+  padding: 8px 14px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.badge.success {
+  background: #dcfce7;
+  color: #166534;
+}
+
+.badge.warning {
+  background: #fef3c7;
+  color: #92400e;
+}
+
+.badge.transferable {
+  background: #e0e7ff;
+  color: #3730a3;
+}
+
+
+/* POINTS FORTS */
+
+.strengths {
+  padding-left: 20px;
+  line-height: 1.8;
+}
+
+
+/* CONSEIL */
+
+.advice {
+  padding: 20px;
+  border-radius: 12px;
+  background: #f5f3ff;
+}
+
+.advice h3 {
+  margin-top: 0;
+}
+
+.advice p {
+  line-height: 1.6;
+  margin-bottom: 0;
+}
+
+
+/* RECOMMANDATION */
+
+.recommendation {
+  margin-top: 20px;
+  padding: 20px;
+  border-radius: 12px;
+  background: #f9fafb;
+}
+
+.recommendation h3 {
+  margin-top: 0;
+}
+
+.recommendation p {
+  margin-bottom: 0;
+  line-height: 1.6;
+}
+
+.section-description {
+  color: #6b7280;
+  margin-bottom: 20px;
+}
+
+.upload-button {
+  display: inline-block;
+  padding: 14px 22px;
+  background: #4f46e5;
+  color: white;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.upload-button:hover {
+  background: #4338ca;
+}
+
+.file-success {
+  margin-top: 15px;
+  padding: 12px;
+  border-radius: 10px;
+  background: #dcfce7;
+  color: #166534;
+  font-weight: bold;
+}
+
+.cv-profile {
+  margin-top: 25px;
+  padding: 20px;
+  background: #f9fafb;
+  border-radius: 12px;
+}
+
+.cv-profile h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.cv-profile p {
+  color: #6b7280;
+  line-height: 1.6;
+}
+
+.badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 7px 11px;
+  border-radius: 999px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.2;
+  white-space: nowrap;
+}
+
+.delete-profile {
+  margin-top: 15px;
+  padding: 10px 15px;
+  background: transparent;
+  color: #dc2626;
+  border: 1px solid #fecaca;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.delete-profile:hover {
+  background: #fef2f2;
+}
